@@ -1,0 +1,1 @@
+Solo es cuestion de iniciar el servidor igual que en todos los demas miniproyectos, y podras ver la cuenta regresiva.
