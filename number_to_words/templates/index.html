@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Número en Palabras</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Número en Palabras</h1>
+    <form method="POST">
+        <label for="numberInput">Ingresa un número entre 0 y 99:</label>
+        <input type="number" id="numberInput" name="number" min="0" max="99" required>
+        <button type="submit">Convertir</button>
+    </form>
+    {% if result %}
+    <p>El número en palabras es: {{ result }}</p>
+    {% endif %}
+</body>
+</html>
