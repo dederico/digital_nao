@@ -8,7 +8,7 @@ function fetchItems() {
   setTimeout(function() {
     var itemsContainer = document.getElementById("content");
 
-    for (var i = 1; i <= 10; i++) {
+    for (var i = 1; i <= 20; i++) {
       var newItem = document.createElement("div");
       newItem.classList.add("item");
       newItem.innerHTML = "Elemento " + ((page - 1) * 10 + i);
