@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Menú telefónico USSD</title>
+</head>
+<body>
+  <h1>Bienvenido al menú telefónico USSD</h1>
+  <form method="post" action="/">
+    <label for="text-input">Ingrese una opción:</label>
+    <input type="text" id="text-input" name="text" autofocus>
+    <input type="hidden" name="sessionId" value="12345">
+    <input type="hidden" name="phoneNumber" value="987654321">
+    <input type="hidden" name="serviceCode" value="*123#">
+    <button type="button" onclick="submitForm()">Enviar</button>
+  </form>
+  <p>Opciones válidas: 1. Consultar saldo, 2. Recargar, 3. Transferir, 4. Salir</p>
+</body>
+<script>
+  function submitForm() {
+    var textInput = document.getElementById('text-input').value;
+    fetch('/', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded',
+      },
+      body: 'text=' + encodeURIComponent(textInput),
+    })
+    .then(response => response.text())
+    .then(data => {
+      document.body.innerHTML = data;
+      if (data !== 'Opción inválida. Por favor, seleccione una opción válida.') {
+        var backButton = document.createElement('button');
+        backButton.innerHTML = 'Volver';
+        backButton.onclick = function() {
+          location.reload();
+        };
+        document.body.appendChild(backButton);
+      }
+    })
+    .catch(error => {
+      console.error('Error:', error);
+    });
+  }
+</script>
+</html>
