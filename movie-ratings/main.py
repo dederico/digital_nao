@@ -9,7 +9,7 @@ def index():
     if request.method == 'POST':
         movie_title = request.form.get('movie_title')
         if movie_title:
-            api_key = ''
+            api_key = '43c834331f92a0930ef707b6fc70ee16'
             url = f'https://api.themoviedb.org/3/search/movie?api_key={api_key}&query={movie_title}'
             response = requests.get(url)
             if response.status_code == 200:
