@@ -53,7 +53,7 @@ style.theme_create("ColorTheme", parent="alt", settings={
     "TButton": {
         "configure": {
             "padding": 5,
-            "foreground": "white"  # Cambiar el color del texto a blanco
+            "foreground": "white"
         },
         "map": {"background": [("active", "!disabled", "background")]},
     }
