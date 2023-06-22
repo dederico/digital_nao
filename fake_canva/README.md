@@ -14,8 +14,6 @@ Esta es una aplicación simple de pintura en pantalla que te permite dibujar uti
 
 2. Clona o descarga el repositorio de GitHub en tu máquina local.
 
-   $ git clone https://github.com/dederico/digital_nao/fake_canva.git
-
 3. Accede al directorio del proyecto.
 
    $ cd fake_canva
@@ -57,8 +55,6 @@ Si deseas contribuir a este proyecto, puedes seguir los siguientes pasos:
 1. Realiza un fork del repositorio en GitHub.
 
 2. Clona tu repositorio fork en tu máquina local.
-
-   $ git clone https://github.com/dederico/digital_nao/fake_canva.git
 
 3. Crea una rama para tus cambios.
 
