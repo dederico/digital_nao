@@ -1,5 +1,5 @@
 INSTRUCTIVO DE USO - FAKE_CANVA
-¡Bienvenido a Canvas Paint!
+¡Bienvenido!
 
 Canvas Paint es una aplicación sencilla que te permite dibujar en un lienzo utilizando colores seleccionables y una herramienta de borrado. A continuación, encontrarás las instrucciones de uso y cómo ejecutar la aplicación.
 
