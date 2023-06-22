@@ -14,11 +14,9 @@ Esta es una aplicación simple de pintura en pantalla que te permite dibujar uti
 
 2. Clona o descarga el repositorio de GitHub en tu máquina local.
 
-   $ git clone https://github.com/tu-usuario/paint-app.git
-
 3. Accede al directorio del proyecto.
 
-   $ cd paint-app
+   $ cd fake_canva
 
 4. Opcionalmente, crea y activa un entorno virtual para mantener las dependencias del proyecto aisladas.
 
@@ -26,15 +24,11 @@ Esta es una aplicación simple de pintura en pantalla que te permite dibujar uti
    $ source venv/bin/activate  # En sistemas UNIX
    $ venv\Scripts\activate  # En sistemas Windows
 
-5. Instala las dependencias del proyecto utilizando pip, el gestor de paquetes de Python.
-
-   $ pip install -r requirements.txt
-
 ## Ejecución
 
 1. Desde el directorio del proyecto, ejecuta el archivo main.py con Python.
 
-   $ python main.py
+   $ python fake_canva.py
 
 2. La aplicación se abrirá en una nueva ventana.
 
@@ -61,8 +55,6 @@ Si deseas contribuir a este proyecto, puedes seguir los siguientes pasos:
 1. Realiza un fork del repositorio en GitHub.
 
 2. Clona tu repositorio fork en tu máquina local.
-
-   $ git clone https://github.com/tu-usuario/paint-app.git
 
 3. Crea una rama para tus cambios.
 
